@@ -29,7 +29,7 @@
             <img
               src="./assets/Logo.png"
               alt="Book Haven Bookstore Logo.png"
-              height="30"
+              height="50"
             />
           </div>
           <div>
@@ -39,7 +39,7 @@
         <div>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
               <a href="gallery.html">Gallery</a>
@@ -56,30 +56,196 @@
     </header>
 
     <main>
-      <section id="hero"></section>
-
-      <section id="highlights">
-        <h2>Highlights</h2>
+      <section id="hero" aria-label="Hero banner">
+        <!-- hero image goes here -->
       </section>
 
-      <section id="shopping-promos">
-        <h2>Shopping Promos</h2>
+      <section id="highlights" aria-labelledby="highlights-title">
+        <h2 id="highlights-title">Highlights</h2>
+        <div>
+          <figure>
+            <img
+              src="assets/images/Client3_Magazine1.png"
+              alt="Magazine highlight"
+            />
+            <figcaption>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              nisi.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/Client3_Book1.png" alt="Book highlight" />
+            <figcaption>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              nisi.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/Client3_Book2.png" alt="Book highlight" />
+            <figcaption>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              nisi.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/Client3_Book3.png" alt="Book highlight" />
+            <figcaption>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              nisi.
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section id="why-shop-here">
-        <h2>Why Shop Here</h2>
+      <section id="shopping-promos" aria-labelledby="promos-title">
+        <h2 id="promos-title">Shopping Promos</h2>
+        <div>
+          <figure>
+            <img src="assets/images/Client3_ToteBag.png" alt="Tote bag promo" />
+          </figure>
+        </div>
       </section>
 
-      <section id="shop-by-category">
-        <h2>Shop by Category</h2>
+      <section id="why-shop-here" aria-labelledby="why-title">
+        <h2 id="why-title">Why Shop Here</h2>
+        <div>
+          <article>
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              fuga?
+            </p>
+          </article>
+          <article>
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              fuga?
+            </p>
+          </article>
+          <article>
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              fuga?
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section id="newsletter" aria-labelledby="newsletter-title">
-        <h2 id="newsletter-title">Subscribe</h2>
-        <form></form>
+      <section id="shop-by-category" aria-labelledby="categories-title">
+        <h2 id="categories-title">Shop by Category</h2>
+        <ul>
+          <li><a href="#">Categoria 1</a></li>
+          <li><a href="#">Categoria 2</a></li>
+          <li><a href="#">Categoria 3</a></li>
+          <li><a href="#">Categoria 4</a></li>
+          <li><a href="#">Categoria 5</a></li>
+          <li><a href="#">Categoria 6</a></li>
+        </ul>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section id="newsletter" aria-labelledby="newsletter-title">
+        <h2 id="newsletter-title">Subscribe</h2>
+        <form>
+          <label for="newsletter-email">Newsletter</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="newsletter-email"
+            placeholder="clientemail@gmail.com"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <nav aria-label="Social media">
+        <ul>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="X (Twitter)">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Pinterest">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Footer links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
