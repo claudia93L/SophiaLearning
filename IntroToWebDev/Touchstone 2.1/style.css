@@ -592,11 +592,6 @@ main > h1 {
   gap: 8px;
 }
 
-#emerging-authors > div,
-#emerging-authors {
-  /* section padding already handled by main > section */
-}
-
 #emerging-authors article {
   display: flex;
   align-items: flex-start;
