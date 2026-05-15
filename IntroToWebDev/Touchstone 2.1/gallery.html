@@ -22,9 +22,7 @@
 
         <div id="fullmenu">
           <ul>
-            <li>
-              <a href="index.html">Homepage</a>
-            </li>
+            <li><a href="index.html">Homepage</a></li>
             <li>
               <div class="marker">You are currently on</div>
               <a href="gallery.html">Gallery</a>
@@ -58,7 +56,10 @@
     <main>
       <h1>Gallery</h1>
       <section id="product-grid" aria-labelledby="products-title">
-        <h2 id="products-title">Products</h2>
+        <div class="section-header">
+          <h2 id="products-title">Products</h2>
+          <button type="button" class="view-cart-btn">View Cart</button>
+        </div>
         <table>
           <tbody>
             <tr>
@@ -87,7 +88,6 @@
                 <button type="button">Add to Cart</button>
               </td>
             </tr>
-            <!-- seconda riga -->
             <tr>
               <td>
                 <figure>
@@ -114,7 +114,6 @@
                 <button type="button">Add to Cart</button>
               </td>
             </tr>
-            <!-- terza riga -->
             <tr>
               <td>
                 <figure>
@@ -161,7 +160,7 @@
         </form>
       </section>
 
-      <nav aria-label="Social media">
+      <nav aria-label="Social media" class="nav-footer">
         <ul>
           <li>
             <a href="#" aria-label="Facebook">
@@ -238,7 +237,7 @@
         </ul>
       </nav>
 
-      <nav aria-label="Footer links">
+      <nav aria-label="Footer links" class="nav-footer">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Service</a></li>
