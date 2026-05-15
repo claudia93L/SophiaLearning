@@ -14,13 +14,13 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <div>
           <div id="logo-div">
             <a href="index.html">
               <img
                 src="./assets/Logo.png"
-                alt="Book Haven Bookstore Logo.png"
+                alt="Book Haven Bookstore"
                 height="50"
               />
             </a>
@@ -29,17 +29,11 @@
         </div>
         <div>
           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About</a></li>
             <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="about-us.html">About</a>
-            </li>
-            <li>
-              <a href="news-and-events.html">Events</a>
+              <a href="news-and-events.html" aria-current="page">Events</a>
             </li>
           </ul>
         </div>
@@ -48,32 +42,94 @@
 
     <main>
       <h1>News & Events</h1>
-      <section id="emerging-authors">
-        <h2>Emerging Talent’s Authors</h2>
 
+      <section id="emerging-authors" aria-labelledby="authors-title">
+        <h2 id="authors-title">Emerging Authors</h2>
         <article>
-          <figure></figure>
-          <h2></h2>
-          <p></p>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <h3>Author Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatem reprehenderit laborum quaerat distinctio nam.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <h3>Author Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatem reprehenderit laborum quaerat distinctio nam.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <h3>Author Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatem reprehenderit laborum quaerat distinctio nam.
+          </p>
         </article>
       </section>
 
-      <section id="meet-greet">
-        <h2>Meet & Greet</h2>
+      <section id="meet-greet" aria-labelledby="meet-title">
+        <h2 id="meet-title">Meet & Greet</h2>
         <article>
-          <figure></figure>
-          <p></p>
+          <h3>Event Title</h3>
+          <p>
+            <time datetime="2025-06-14">June 14, 2025</time>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            expedita accusantium neque doloremque.
+          </p>
+        </article>
+        <article>
+          <h3>Event Title</h3>
+          <p>
+            <time datetime="2025-07-05">July 5, 2025</time>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            expedita accusantium neque doloremque.
+          </p>
         </article>
       </section>
 
-      <section id="events">
-        <h2>Events & Collaborations</h2>
+      <section id="events" aria-labelledby="events-title">
+        <h2 id="events-title">Events & Collaborations</h2>
         <article>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <h3>Event Title</h3>
+          <p>
+            <time datetime="2025-06-20">June 20, 2025</time>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            blanditiis quis distinctio.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <h3>Collaboration Title</h3>
+          <p>
+            <time datetime="2025-08-10">August 10, 2025</time>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            blanditiis quis distinctio.
+          </p>
         </article>
       </section>
-
     </main>
 
     <footer>

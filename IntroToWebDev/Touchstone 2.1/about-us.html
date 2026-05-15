@@ -69,28 +69,47 @@
         </dl>
       </section>
 
-      <section id="contact">
-        <h2>Contact & Custom Orders</h2>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact & Custom Orders</h2>
         <form>
-          <label>Full Name</label>
-          <input type="text" required placeholder="Jane Doe" />
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            required
+            placeholder="Jane Doe"
+          />
 
-          <label>Email address</label>
-          <input type="email" required placeholder="hello@gmail.com" />
+          <label for="contact-email">Email address</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="contact-email"
+            required
+            placeholder="hello@gmail.com"
+          />
 
-          <label>Phone number</label>
-          <input type="tel" required placeholder="+44 12345678" />
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+44 12345678"
+          />
 
-          <label>Feedback / Order Info</label>
-          <textarea maxlength="250"></textarea>
+          <label for="feedback">Feedback / Order Info</label>
+          <textarea id="feedback" name="feedback" maxlength="250"></textarea>
 
-          <label> <input type="checkbox" /> Custom Order </label>
+          <label>
+            <input type="checkbox" name="custom-order" />
+            Custom Order
+          </label>
 
           <button type="submit">Submit</button>
           <button type="reset">Clear</button>
         </form>
       </section>
-
     </main>
 
     <footer>
