@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* audio nav accessibility display none */
 nav .marker {
   display: none;
+}
+
+/* color variables */
+
+:root {
+  --parchmentWhite: #fff7ee;
+  --inkwellBlue: #2e4057;
+  --intesityIndigo: #ee583f;
+  --dustyRose: #f7b3cc;
+  --agedGold: #c7b65e;
+  --bookishBlack: #131c26;
+}
+
+/* general colors of the website */
+
+body {
+  background-color: var(--parchmentWhite);
+  color: var(--bookishBlack);
+}
+
+/* font settings */
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.comfortaa-h3 {
+  font-size: 20px;
+}
+
+p.large {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+p.strong {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+.captions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
 }

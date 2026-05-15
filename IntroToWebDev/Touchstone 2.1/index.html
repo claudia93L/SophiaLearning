@@ -1,56 +1,53 @@
-<!-- The webpages should follow the wireframe designs that you completed in Touchstone Task 1.
-        All the webpages should have a navigation bar in the header section and a footer section at the bottom of the page.
-        You must use the provided images for the client logo and products.
-        The Homepage should include the client logo and client name at the top of the webpage as the webpage header. You should include relevant information and content for the other sections of this page that are appropriate for the client description.
-        The Gallery page should display the product images in a table where there will be an “Add to Cart” button below each image.
-        The About Us/Contact page should include a web form for client feedback and custom order creation.
-        The custom fourth page should include content relevant to your selected client. Some sample content can be customer testimonials, community involvement, local events, collaborations, and so on. 
--->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Haven Bookstore | Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <div id="logo-div">
-            <a href="index.html">
-              <img
-                src="./assets/Logo.png"
-                alt="Book Haven Bookstore Logo.png"
-                height="50"
-              />
-            </a>
-            <span>Book Haven Bookstore</span>
-          </div>
+      <nav aria-label="Main navigation">
+        <div id="logo-div">
+          <a href="index.html">
+            <img
+              src="./assets/Logo.png"
+              alt="Book Haven Bookstore"
+              height="50"
+            />
+          </a>
+          <span>Book Haven Bookstore</span>
         </div>
-        <div>
+
+        <div id="fullmenu">
           <ul>
             <li>
               <div class="marker">You are currently on</div>
               <a href="index.html">Homepage</a>
             </li>
-            <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="about-us.html">About</a>
-            </li>
-            <li>
-              <a href="news-and-events.html">Events</a>
-            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="news-and-events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div id="burgermenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="2.0em"
+            viewBox="0 0 448 512"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+          <ul id="burgermenulinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="news-and-events.html">Events</a></li>
           </ul>
         </div>
       </nav>
