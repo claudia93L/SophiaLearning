@@ -62,7 +62,7 @@
       <section id="product-grid" aria-labelledby="products-title">
         <div class="section-header">
           <h2 id="products-title">Products</h2>
-          <button type="button" class="view-cart-btn">View Cart</button>
+          <button type="button" class="view-cart-btn" onclick="showCart()">View Cart</button>
         </div>
         <table>
           <tbody>
@@ -73,7 +73,7 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
               <td>
                 <figure>
@@ -81,7 +81,7 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
               <td>
                 <figure>
@@ -89,25 +89,25 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
             </tr>
             <tr>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Book1.png" alt="Book title" />
+                  <img src="assets/images/Client3_Notebook.png" alt="Book title" />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Book2.png" alt="Book title" />
+                  <img src="assets/images/Client3_Stickers.png" alt="Book title" />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
               <td>
                 <figure>
@@ -115,13 +115,21 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
             </tr>
             <tr>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Book1.png" alt="Book title" />
+                  <img src="assets/images/Client3_Magazine1.png" alt="Book title" />
+                </figure>
+                <h3>Article name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
+              </td>
+              <td>
+                <figure>
+                  <img src="assets/images/Client3_Magazine2.png" alt="Book title" />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -129,19 +137,11 @@
               </td>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Book2.png" alt="Book title" />
+                  <img src="assets/images/Client3_Magazine3.pngalt="Book title" />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
-              </td>
-              <td>
-                <figure>
-                  <img src="assets/images/Client3_Book3.png" alt="Book title" />
-                </figure>
-                <h3>Article name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button">Add to Cart</button>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
               </td>
             </tr>
           </tbody>
@@ -161,7 +161,9 @@
               name="newsletter-email"
               placeholder="clientemail@gmail.com"
             />
-            <button type="submit" onclick="showAlertSubscribe()">Subscribe</button>
+            <button type="submit" onclick="showAlertSubscribe()">
+              Subscribe
+            </button>
           </div>
         </form>
       </section>

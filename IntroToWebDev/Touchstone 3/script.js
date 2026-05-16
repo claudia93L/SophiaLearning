@@ -9,3 +9,19 @@ const showAlertMessageSent = () => {
 const showAlertClearForm = () => {
   alert('The form has been cleared.');
 };
+
+const addtoCart = () => {
+  alert('The item has been added to your cart!');
+};
+
+const showCart = () => {
+  alert('Your cart is currently empty.');
+};
+
+const clearCart = () => {
+  alert('Your cart has been cleared.');
+};
+
+const processOrder = () => {
+  alert('Your order has been processed. Thank you for shopping with us!');
+};
