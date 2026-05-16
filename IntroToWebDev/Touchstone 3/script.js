@@ -1,9 +1,9 @@
 const showAlertSubscribe = () => {
-  alert('Thank you for subscribing to our newsletter!');
+  alert('Thank you for subscribing.');
 };
 
 const showAlertMessageSent = () => {
-  alert('Thank you for contacting us! We will get back to you shortly.');
+  alert('Thank you for your message.');
 };
 
 const showAlertClearForm = () => {
@@ -11,7 +11,7 @@ const showAlertClearForm = () => {
 };
 
 const addToCart = () => {
-  alert('The item has been added to your cart!');
+  alert('Item added to the cart.');
 };
 
 const showCart = () => {
@@ -19,9 +19,9 @@ const showCart = () => {
 };
 
 const clearCart = () => {
-  alert('Your cart has been cleared.');
+  alert('Cart cleared');
 };
 
 const processOrder = () => {
-  alert('Your order has been processed. Thank you for shopping with us!');
+  alert('Thank you for your order.');
 };
