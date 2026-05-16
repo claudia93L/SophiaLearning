@@ -10,7 +10,7 @@ const showAlertClearForm = () => {
   alert('The form has been cleared.');
 };
 
-const addtoCart = () => {
+const addToCart = () => {
   alert('The item has been added to your cart!');
 };
 
