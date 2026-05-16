@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Haven Bookstore | About Us</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -121,8 +122,8 @@
             Custom Order
           </label>
 
-          <button type="submit">Submit</button>
-          <button type="reset">Clear</button>
+          <button type="submit" onclick="showAlertMessageSent()">Submit</button>
+          <button type="reset" onclick="showAlertClearForm()">Clear</button>
         </form>
       </section>
     </main>
@@ -139,7 +140,9 @@
               name="newsletter-email"
               placeholder="clientemail@gmail.com"
             />
-            <button type="submit">Subscribe</button>
+            <button type="submit" onclick="showAlertSubscribe()">
+              Subscribe
+            </button>
           </div>
         </form>
       </section>
