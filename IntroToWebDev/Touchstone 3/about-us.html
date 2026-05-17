@@ -87,7 +87,7 @@
 
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact & Custom Orders</h2>
-        <form>
+        <form id="contact-form" onsubmit="return false;"">
           <label for="full-name">Full Name</label>
           <input
             type="text"
@@ -118,11 +118,11 @@
           <textarea id="feedback" name="feedback" maxlength="250"></textarea>
 
           <label>
-            <input type="checkbox" name="custom-order" />
+            <input type="checkbox" id="custom-order" name="custom-order" />
             Custom Order
           </label>
 
-          <button type="submit" onclick="showAlertMessageSent()">Submit</button>
+          <button type="button" onclick="submitForm()">Submit</button>
           <button type="reset" onclick="showAlertClearForm()">Clear</button>
         </form>
       </section>

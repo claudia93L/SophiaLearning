@@ -63,11 +63,20 @@
         <div class="section-header">
           <h2 id="products-title">Products</h2>
           <div class="cart-actions">
-            <button type="button" class="view-cart-btn" onclick="showCart()">View Cart</button>
-            <button type="button" class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
-            <button type="button" class="process-order-btn" onclick="processOrder()">Process Order</button>
+            <button type="button" class="view-cart-btn" onclick="showCart()">
+              View Cart
+            </button>
+            <button type="button" class="clear-cart-btn" onclick="clearCart()">
+              Clear Cart
+            </button>
+            <button
+              type="button"
+              class="process-order-btn"
+              onclick="processOrder()"
+            >
+              Process Order
+            </button>
           </div>
-        </div>
         </div>
         <table>
           <tbody>
@@ -78,7 +87,9 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Book 1')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
@@ -86,7 +97,9 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Book 2')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
@@ -94,51 +107,78 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Book 3')">
+                  Add to Cart
+                </button>
               </td>
             </tr>
             <tr>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Magazine1.png" alt="Book title" />
+                  <img
+                    src="assets/images/Client3_Magazine1.png"
+                    alt="Book title"
+                  />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Magazine 1')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Magazine2.png" alt="Book title" />
+                  <img
+                    src="assets/images/Client3_Magazine2.png"
+                    alt="Book title"
+                  />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Magazine 2')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Magazine3.png" alt="Book title" />
+                  <img
+                    src="assets/images/Client3_Magazine3.png"
+                    alt="Book title"
+                  />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Magazine 3')">
+                  Add to Cart
+                </button>
               </td>
             </tr>
             <tr>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Notebook.png" alt="Book title" />
+                  <img
+                    src="assets/images/Client3_Notebook.png"
+                    alt="Book title"
+                  />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Notebook')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
-                  <img src="assets/images/Client3_Stickers.png" alt="Book title" />
+                  <img
+                    src="assets/images/Client3_Stickers.png"
+                    alt="Book title"
+                  />
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Stickers')">
+                  Add to Cart
+                </button>
               </td>
               <td>
                 <figure>
@@ -146,7 +186,9 @@
                 </figure>
                 <h3>Article name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="button" onclick="addToCart()">Add to Cart</button>
+                <button type="button" onclick="addToCart('Book 4')">
+                  Add to Cart
+                </button>
               </td>
             </tr>
           </tbody>
@@ -166,7 +208,9 @@
               name="newsletter-email"
               placeholder="clientemail@gmail.com"
             />
-            <button type="submit" onclick="showAlertSubscribe()">Subscribe</button>
+            <button type="submit" onclick="showAlertSubscribe()">
+              Subscribe
+            </button>
           </div>
         </form>
       </section>
@@ -257,5 +301,14 @@
         </ul>
       </nav>
     </footer>
+
+    <!-- modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" id="close-cart-modal">&times;</span>
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+      </div>
+    </div>
   </body>
 </html>
