@@ -66,9 +66,7 @@
             <button type="button" class="view-cart-btn" onclick="showCart()">
               View Cart
             </button>
-            <button type="button" class="clear-cart-btn" onclick="clearCart()">
-              Clear Cart
-            </button>
+
             <button
               type="button"
               class="process-order-btn"
@@ -308,6 +306,16 @@
         <span class="modal-close" id="close-cart-modal">&times;</span>
         <h3>Your Cart</h3>
         <ul id="cart-items"></ul>
+        <button type="button" class="clear-cart-btn" onclick="clearCart()">
+          Clear Cart
+        </button>
+        <button
+          type="button"
+          class="process-order-btn"
+          onclick="processOrder()"
+        >
+          Process Order
+        </button>
       </div>
     </div>
   </body>

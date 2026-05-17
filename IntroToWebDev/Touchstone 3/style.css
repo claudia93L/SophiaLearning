@@ -592,8 +592,8 @@ main > h1 {
 }
 
 .clear-cart-btn {
-  background-color: var(--parchmentWhite);
-  color: var(--bookishBlack);
+  background-color: var(--inkwellBlue);
+  color: var(--parchmentWhite);
 }
 
 .clear-cart-btn:hover {
@@ -858,4 +858,10 @@ main > h1 {
 
 .modal-close:hover {
   color: var(--intesityIndigo);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
 }
