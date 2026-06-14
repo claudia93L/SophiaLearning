@@ -1,3 +1,10 @@
+# Library.py 
+
+# This file defines the Library class, which manages the full collection
+# of Book and Comic objects. It handles loading and saving data to a JSON file,
+# and provides all methods for adding, removing, editing, searching, and filtering.
+
+
 import json
 import os
 from Book import Book, Comic

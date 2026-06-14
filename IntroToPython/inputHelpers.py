@@ -1,3 +1,9 @@
+# inputHelpers.py 
+
+# This file contains helper functions for collecting and validating user input.
+# These functions are used by main.py to gather data before creating Book
+# or Comic objects. Keeping them separate avoids cluttering the main menu logic.
+
 from Book import Book, Comic
 
 def get_input(prompt, optional=False):

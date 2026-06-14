@@ -1,3 +1,10 @@
+# main.py 
+
+# This is the entry point of the program.
+# It initializes the Library, loads existing data from the JSON file,
+# and runs the main menu loop until the user chooses to quit.
+
+
 from Library import Library
 from inputHelpers import collect_novel_data, collect_comic_data, get_input, get_gender
 

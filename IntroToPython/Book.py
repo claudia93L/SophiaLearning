@@ -1,3 +1,11 @@
+# Book.py 
+
+# This file defines the Book base class and the Comic subclass.
+# Book represents a novel or any general book.
+# Comic inherits from Book and adds fields specific to illustrated works,
+# such as illustrator, illustrator gender, and visual style.
+
+
 class Book:
     """Base class representing a novel or general book."""
 
